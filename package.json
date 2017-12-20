@@ -5,11 +5,12 @@
   "main": "build",
   "typings": "build/typings/index.d.ts",
   "scripts": {
-    "start": "`npm bin`/watch 'npm run build' src",
+    "start": "npm run work && node app.js",
+    "work": "`npm bin`/watch 'npm run build' src",
     "clear:build": "rm -rf ./build && mkdir build",
     "build:js": "`npm bin`/tsc -p tsconfig.json",
     "build": "npm run clear:build && npm run build:js",
-    "now-start": "./bin/coin-hive-stratum 8892 --dynamic-pool",
+    "now-start": "node app.js",
     "prepublish": "npm run build"
   },
   "repository": {
