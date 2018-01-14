@@ -1,7 +1,7 @@
 {
-  "name": "coin-hive-stratum",
-  "version": "2.6.6",
-  "description": "proxy to use CoinHive miner on any stratum pool",
+  "name": "radiator",
+  "version": "2.6.7",
+  "description": "zahriva lidi",
   "main": "build",
   "typings": "build/typings/index.d.ts",
   "scripts": {
@@ -13,21 +13,8 @@
     "now-start": "node app.js",
     "prepublish": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cazala/coin-hive-stratum.git"
-  },
-  "keywords": [
-    "coinhive",
-    "stratum",
-    "proxy"
-  ],
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cazala/coin-hive-stratum/issues"
-  },
-  "homepage": "https://github.com/cazala/coin-hive-stratum#readme",
   "dependencies": {
     "@types/node": "^8.0.53",
     "@types/ws": "^3.2.0",
@@ -39,8 +26,5 @@
     "uuid": "^3.1.0",
     "watch": "^1.0.2",
     "ws": "^3.2.0"
-  },
-  "bin": {
-    "coin-hive-stratum": "./bin/coin-hive-stratum"
   }
 }
